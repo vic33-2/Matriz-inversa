@@ -82,7 +82,14 @@ public class MatrizInversa {
         System.out.println("Usa una matriz de 2x2.");
         return null;
     }
-
+public static void imprimirMatriz(double[][] matrizz) {
+        for (double[] fila : matriz) {
+            for (double valor : fila) {
+                System.out.printf("%.2f ", valor);
+            }
+            System.out.println();
+        }
+    }
     public static void escribirArchivo(double[][] matriz, String nombreArchivo) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(nombreArchivo))) {
             for (double[] fila : matriz) {
