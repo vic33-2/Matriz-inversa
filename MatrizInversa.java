@@ -73,7 +73,7 @@ public class MatrizInversa {
             double det = (matriz[0][0] * matriz[1][1]) - (matriz[0][1] * matriz[1][0]);
             if (det == 0) return null;
             double[][] inversa = {
-                { matriz[1][0] / det, -matriz[0][1] / det },
+                { matriz[0][1] / det, -matriz[0][1] / det },
                 { -matriz[1][0] / det, matriz[0][0] / det }
             };
             return inversa;
